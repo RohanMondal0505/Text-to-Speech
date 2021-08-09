@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+	width: 100vw;
+	height: 100vh;
+	background: rgb(148, 147, 147);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	background: rgba(255, 255, 255, 0.795);
+	width: 35rem;
+	height: 15rem;
+	border-radius: 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.container #voiceList{
+    color: rgb(71, 71, 71);
+}
+
+.container input, #voiceList {
+	width: 100%;
+	outline: none;
+	border: none;
+	border-radius: 1rem;
+	padding: 0.6rem 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.container input:focus,
+input:hover {
+	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.container input::placeholder{
+    color: rgb(128, 128, 128);
+    letter-spacing: 0.2rem;
+}
+
+.container button {
+	width: 15rem;
+	padding: 0.8rem 1rem;
+	cursor: pointer;
+	border-radius: 2rem;
+	border: none;
+	outline: none;
+	transition: all 0.5s ease;
+	font-weight: bolder;
+	font-size: 1.1rem;
+	letter-spacing: 0.1rem;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.container button:hover {
+	background: rgb(0, 217, 255);
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
